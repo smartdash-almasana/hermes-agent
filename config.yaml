@@ -3,3 +3,15 @@ mcp_servers:
     command: "python3"
     args:
       - "/home/neoalmasana/SmartPyme/mcp_smartpyme_bridge.py"
+
+factory:
+  multiagent:
+    enabled: true
+    orchestrator_role: Hermes
+  provider:
+    name: Gemini 2.5 Pro
+  agents_file: factory/AGENTS.md
+  tools:
+    telegram_notify:
+      path: factory/telegram_notify.py
+      env_file: factory/.env
