@@ -1,0 +1,6 @@
+name: smartpyme-model-guard
+version: "0.1.0"
+description: "SmartPyme gateway guard for model routing policy"
+author: "SmartPyme"
+provides_hooks:
+  - pre_gateway_dispatch
